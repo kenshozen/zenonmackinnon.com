@@ -1,151 +1,223 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <title>Zenon MacKinnon</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
 <style>
 
 *, ::before, *::after {
+
   box-sizing: border-box;
+
   margin: 0;
+
   padding: 0;
+
 }
 
 :root {
-  --bg:      #0d1117;
-  --surface: #161b22;
-  --text:    #e6e1d6;
-  --muted:   #8b9199;
-  --accent:  #7ea882;
-  --rule:    #2a3140;
+
+  --red: #C41E2A;
+
+  --black: #1a1a1a;
+
+  --near-white: #FAFAF8;
+
 }
 
 html {
-  background-color: var(--bg);
+
+  background-color: var(--near-white);
+
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.85;
+
+  background-color: var(--near-white);
+
+  color: var(--black);
+
+  font-family: 'EB Garamond', 'Palatino Linotype', Palatino, Georgia, serif;
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+
   min-height: 100vh;
+
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
-  justify-content: center;
+
   padding: 4rem 1.5rem;
+
 }
 
 main {
+
   width: 100%;
-  max-width: 600px;
-  background: var(--surface);
-  padding: 3.5rem 3.5rem 3rem;
-  border-top: 3px solid var(--accent);
+
+  max-width: 580px;
+
+  border: 1.5px solid var(--red);
+
+  padding: 2.8rem 3rem;
+
 }
 
 header {
-  margin-bottom: 2.8rem;
+
+  margin-bottom: 2.4rem;
+
+  padding-bottom: 1.6rem;
+
+  border-bottom: 1px solid var(--red);
+
+  box-shadow: 0 3px 0 0 var(--red);
+
 }
 
 h1 {
-  font-family: 'DM Serif Display', Georgia, serif;
-  font-size: 2.6rem;
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: -0.01em;
-  color: var(--text);
-  line-height: 1.1;
+
+  font-size: 1.75rem;
+
+  font-weight: 500;
+
+  letter-spacing: 0.03em;
+
+  color: var(--black);
+
+  font-variant: normal;
+
 }
 
 .rubric {
+
   display: block;
-  margin-top: 0.9rem;
-  color: var(--accent);
-  font-size: 0.7rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  font-weight: 500;
+
+  margin-top: 0.5rem;
+
+  color: var(--red);
+
+  font-size: 0.8rem;
+
+  letter-spacing: 0.18em;
+
+  font-variant: small-caps;
+
+  text-transform: lowercase;
+
 }
 
 .ornament {
+
   display: block;
-  height: 1px;
-  background: var(--rule);
-  margin: 2.4rem 0;
-  font-size: 0;
-  letter-spacing: 0;
-  color: transparent;
-  border: none;
+
+  margin: 1.8rem 0;
+
+  color: var(--red);
+
+  text-align: center;
+
+  font-size: 0.75rem;
+
+  letter-spacing: 0.4em;
+
 }
 
 p {
-  margin-bottom: 1.5em;
-  color: var(--text);
-  font-size: 0.975rem;
+
+  margin-bottom: 1.4em;
+
+  color: var(--black);
+
 }
 
 p:last-of-type {
+
   margin-bottom: 0;
+
 }
 
 p::first-letter {
-  color: inherit;
-  font-size: inherit;
-  float: none;
-  line-height: inherit;
-  margin: 0;
-  font-weight: inherit;
+
+  color: var(--red);
+
+  font-size: 2.6rem;
+
+  float: left;
+
+  line-height: 0.82;
+
+  margin-right: 0.08em;
+
+  margin-top: 0.05em;
+
+  font-weight: 500;
+
 }
 
 footer {
+
   margin-top: 0;
-  padding-top: 1.6rem;
-  border-top: 1px solid var(--rule);
-  font-size: 0.78rem;
-  color: var(--muted);
-  letter-spacing: 0.04em;
+
+  padding-top: 1.4rem;
+
+  border-top: 1px solid var(--red);
+
+  font-size: 0.88rem;
+
+  color: var(--red);
+
+  font-variant: small-caps;
+
+  letter-spacing: 0.06em;
+
 }
 
 footer a {
-  color: var(--accent);
+
+  color: var(--red);
+
   text-decoration: none;
-  transition: opacity 0.15s ease;
+
 }
 
 footer a:hover {
-  opacity: 0.7;
-  text-decoration: none;
-}
 
-@media (max-width: 540px) {
-  main {
-    padding: 2.5rem 1.8rem 2rem;
-  }
-  h1 {
-    font-size: 2rem;
-  }
+  text-decoration: underline;
+
 }
 
 </style>
+
 </head>
 
 <body>
+
 <main>
 
   <header>
+
     <h1>Zenon MacKinnon</h1>
+
     <span class="rubric">writer &middot; translator &middot; organizer</span>
+
   </header>
 
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula libero sit amet arcu faucibus, vel gravida magna consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dignissim, orci nec pretium convallis, nulla metus fringilla justo, in fringilla libero sapien vel nisi.</p>
@@ -157,9 +229,13 @@ footer a:hover {
   <span class="ornament">&#10022; &nbsp; &#10022; &nbsp; &#10022;</span>
 
   <footer>
+
     <a href="mailto:zenonmackinnon@gmail.com">zenonmackinnon@gmail.com</a>
+
   </footer>
 
 </main>
+
 </body>
+
 </html>
