@@ -1,271 +1,65 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>Zenon MacKinnon</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-
-<style>
-
-*, ::before, *::after {
-
-  box-sizing: border-box;
-
-  margin: 0;
-
-  padding: 0;
-
-}
-
-:root {
-
-  --red: #C41E2A;
-
-  --black: #1a1a1a;
-
-  --near-white: #FAFAF8;
-
-}
-
-html {
-
-  background-color: var(--near-white);
-
-}
-
-body {
-
-  background-color: var(--near-white);
-
-  color: var(--black);
-
-  font-family: 'EB Garamond', 'Palatino Linotype', Palatino, Georgia, serif;
-
-  font-size: 1.1rem;
-
-  line-height: 1.8;
-
-  min-height: 100vh;
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-
-  padding: 4rem 1.5rem;
-
-}
-
-main {
-
-  width: 100%;
-
-  max-width: 580px;
-
-  border: 1.5px solid var(--red);
-
-  padding: 2.8rem 3rem;
-
-}
-
-header {
-
-  margin-bottom: 2.4rem;
-
-  padding-bottom: 1.6rem;
-
-  border-bottom: 1px solid var(--red);
-
-  box-shadow: 0 3px 0 0 var(--red);
-
-}
-
-h1 {
-
-  font-size: 1.75rem;
-
-  font-weight: 500;
-
-  letter-spacing: 0.03em;
-
-  color: var(--black);
-
-  font-variant: normal;
-
-}
-
-.rubric {
-
-  display: block;
-
-  margin-top: 0.5rem;
-
-  color: var(--red);
-
-  font-size: 0.8rem;
-
-  letter-spacing: 0.18em;
-
-  font-variant: small-caps;
-
-  text-transform: lowercase;
-
-}
-
-.ornament {
-
-  display: block;
-
-  margin: 1.8rem 0;
-
-  color: var(--red);
-
-  text-align: center;
-
-  font-size: 0.75rem;
-
-  letter-spacing: 0.4em;
-
-}
-
-p {
-
-  margin-bottom: 1.4em;
-
-  color: var(--black);
-
-}
-
-p:last-of-type {
-
-  margin-bottom: 0;
-
-}
-
-p::first-letter {
-
-  color: var(--red);
-
-  font-size: 2.6rem;
-
-  float: left;
-
-  line-height: 0.82;
-
-  margin-right: 0.08em;
-
-  margin-top: 0.05em;
-
-  font-weight: 500;
-
-}
-
-footer {
-
-  margin-top: 0;
-
-  padding-top: 1.4rem;
-
-  border-top: 1px solid var(--red);
-
-  font-size: 0.88rem;
-
-  color: var(--red);
-
-  font-variant: small-caps;
-
-  letter-spacing: 0.06em;
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: baseline;
-
-  flex-wrap: wrap;
-
-  gap: 0.4rem 1.2rem;
-
-}
-
-footer a {
-
-  color: var(--red);
-
-  text-decoration: none;
-
-}
-
-footer a:hover {
-
-  text-decoration: underline;
-
-}
-
-.footer-links {
-
-  display: flex;
-
-  gap: 1.2rem;
-
-  flex-wrap: wrap;
-
-}
-
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenon MacKinnon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, ::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --red: #C41E2A; --black: #1a1a1a; --near-white: #FAFAF8; }
+    html { background-color: var(--near-white); }
+    body { background-color: var(--near-white); color: var(--black); font-family: 'EB Garamond', 'Palatino Linotype', Palatino, Georgia, serif; font-size: 1.1rem; line-height: 1.8; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 4rem 1.5rem; }
+    main { width: 100%; max-width: 580px; border: 1.5px solid var(--red); padding: 2.8rem 3rem; }
+    header { margin-bottom: 2.4rem; padding-bottom: 1.6rem; border-bottom: 1px solid var(--red); box-shadow: 0 3px 0 0 var(--red); }
+    h1 { font-size: 1.75rem; font-weight: 500; letter-spacing: 0.03em; color: var(--black); font-variant: normal; }
+    .rubric { display: block; margin-top: 0.5rem; color: var(--red); font-size: 0.8rem; letter-spacing: 0.18em; font-variant: small-caps; text-transform: lowercase; }
+    nav { margin-top: 0.6rem; font-size: 0.82rem; letter-spacing: 0.12em; font-variant: small-caps; }
+    nav a { color: var(--red); text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    nav .sep { color: var(--red); margin: 0 0.5em; }
+    .ornament { display: block; margin: 1.8rem 0; color: var(--red); text-align: center; font-size: 0.75rem; letter-spacing: 0.4em; }
+    p { margin-bottom: 1.4em; color: var(--black); }
+    p:last-of-type { margin-bottom: 0; }
+    p::first-letter { color: var(--red); font-size: 2.6rem; float: left; line-height: 0.82; margin-right: 0.08em; margin-top: 0.05em; font-weight: 500; }
+    a { color: var(--red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 0; padding-top: 1.4rem; border-top: 1px solid var(--red); font-size: 0.88rem; color: var(--red); font-variant: small-caps; letter-spacing: 0.06em; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.4rem 1.2rem; }
+    footer a { color: var(--red); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .footer-links { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+  </style>
 </head>
-
 <body>
+  <main>
+    <header>
+      <h1>Zenon MacKinnon</h1>
+      <span class="rubric">San Francisco</span>
+      <nav>
+        <a href="index.html">About</a>
+        <span class="sep">&middot;</span>
+        <a href="plato.html">Plato for the People</a>
+      </nav>
+    </header>
 
-<main>
+    <p>In the past I’ve been a carpenter, a cantor, a political consultant, and a Franco-Ontarian community organizer. These days I’m a playwright and artistic director of <a href="plato.html">Plato for the People</a>, a scholar of chant and sacred music, and an organizer of the SF-based Avalon Institute for the humanities.</p>
 
-  <header>
+    <p>My intellectual life runs along two axes. The first concerns the status of the human: I work with Generative Anthropology as an account of human origins and distinctiveness, in ongoing friction with non-anthropocentric theories — Accelerationism, Manuel DeLanda’s new materialism, Lambros Malafouris’ Material Engagement Theory — that tell a story where man is incidental to history and may soon become obsolete. The second axis takes the human as given and asks how to actually be one: Eastern Patristics, ritual studies, and Catholic personalism as answers to the question of formation, role-adherence, and the cultivation of stable selfhoods.</p>
 
-    <h1>Zenon MacKinnon</h1>
+    <p>I write and think in French and English. You can read my Substack, <a href="https://formeresiduelle.substack.com/">Forme résiduelle</a>, or explore <a href="https://deltoi.com/">Deltoi</a>, a collaborative translation project I work on with friends.</p>
 
-    <span class="rubric">San Francisco</span>
+    <span class="ornament">&#10022; &nbsp; &#10022; &nbsp; &#10022;</span>
 
-  </header>
-
-  <p>In the past I’ve been a carpenter, a cantor, a political consultant, and a Franco-Ontarian community organizer. These days I’m a playwright and artistic director of Plato for the People, a scholar of chant and sacred music, and an organizer of the SF-based Avalon Institute for the humanities.</p>
-
-  <p>My intellectual life runs along two axes. The first concerns the status of the human: I work with Generative Anthropology as an account of human origins and distinctiveness, in ongoing friction with non-anthropocentric theories — Accelerationism, Manuel DeLanda’s new materialism, Lambros Malafouris’ Material Engagement Theory — that tell a story where man is incidental to history and may soon become obsolete. The second axis takes the human as given and asks how to actually be one: Eastern Patristics, ritual studies, and Catholic personalism as answers to the question of formation, role-adherence, and the cultivation of stable selfhoods.</p>
-
-  <p>I write and think in French and English. You can read my Substack, <a href="https://formeresiduelle.substack.com/">Forme résiduelle</a>, or explore <a href="https://deltoi.com/">Deltoi</a>, a collaborative translation project I work on with friends.</p>
-
-  <span class="ornament">&#10022; &nbsp; &#10022; &nbsp; &#10022;</span>
-
-  <footer>
-
-    <a href="mailto:zenonmackinnon@gmail.com">zenonmackinnon@gmail.com</a>
-
-    <span class="footer-links">
-
-      <a href="https://formeresiduelle.substack.com/">Forme résiduelle</a>
-
-      <a href="https://deltoi.com/">Deltoi</a>
-
-      <a href="https://www.youtube.com/@the_students_media">The Students</a>
-
-    </span>
-
-  </footer>
-
-</main>
-
+    <footer>
+      <a href="mailto:zenonmackinnon@gmail.com">zenonmackinnon@gmail.com</a>
+      <span class="footer-links">
+        <a href="https://formeresiduelle.substack.com/">Forme résiduelle</a>
+        <a href="https://deltoi.com/">Deltoi</a>
+        <a href="https://www.youtube.com/@the_students_media">The Students</a>
+      </span>
+    </footer>
+  </main>
 </body>
-
 </html>
